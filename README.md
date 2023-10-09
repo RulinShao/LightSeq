@@ -3,6 +3,8 @@ Official repository for LightSeq: Sequence Level Parallelism for Distributed Tra
 
 Paper: https://arxiv.org/pdf/2310.03294.pdf
 
+### WARNING: This repo has not been fully tested for end-to-end training. We are actively working on that, with additional feature such as allowing padding in inputs. The current code is only for research preview and reproducing the paper results. We will make public announcement when more support are ready.
+
 ## News
 - [2023/08] 🔥 Our paper is on! We provide a code preview of LightSeq. Stay tuned for future releases!
 
