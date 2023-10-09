@@ -23,7 +23,7 @@ To replace **both** HF checkpointing with FashCkpt and HF LlamaAttention with Fl
 ```python
 # import fastckpt before importing transformers
 from fastckpt.llama_flash_attn_ckpt_monkey_patch import replace_hf_ckpt_with_fast_ckpt
-replace_llama_attn_with_flash_attn()
+replace_hf_ckpt_with_fast_ckpt()
 
 # import transformers and other packages
 import transformers
