@@ -13,11 +13,16 @@ We show a preview of LightSeq in the current release. We will add instructions a
 
 ## Rematerialization-aware gradient checkpointing
 Rematerialization-aware gradient checkpointing can save your training time in one line! 
-We plan to release it as a Python package, [`fastckpt`](https://github.com/RulinShao/fast-ckpt), so you can use it by simply running
+We release it as a Python package, [`fastckpt`](https://github.com/RulinShao/FastCkpt), so you install it by
+```bash
+pip install fastckpt
+```
+
+To replace **both** HF checkpointing with FashCkpt and HF LlamaAttention with FlashAttention, run 
 
 ```python
 # import fastckpt before importing transformers
-from fastckpt.llama_flash_attn_monkey_patch import replace_hf_ckpt_with_fast_ckpt
+from fastckpt.llama_flash_attn_ckpt_monkey_patch import replace_hf_ckpt_with_fast_ckpt
 replace_llama_attn_with_flash_attn()
 
 # import transformers and other packages
@@ -25,4 +30,14 @@ import transformers
 ...
 ```
 
-The package will be ready to use soon. Stay tuned for a formal release!
+Alternatively, if you only want to replace the attention module with FlashAttention, simply run
+
+```python
+# import fastckpt before importing transformers
+from fastckpt.llama_flash_attn_monkey_patch import replace_llama_attn_with_flash_attn
+replace_llama_attn_with_flash_attn()
+
+# import transformers and other packages
+import transformers
+...
+```
