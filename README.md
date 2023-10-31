@@ -75,4 +75,13 @@ import transformers
 ...
 ```
 
-Support for one-line importing of LightSeq will come soon.
+If you find this repo useful, please cite
+```
+@article{li2023lightseq,
+  title={LIGHTSEQ: SEQUENCE LEVEL PARALLELISM FOR DISTRIBUTED TRAINING OF LONG CONTEXT TRANS},
+  author={Li, Dacheng and Shao, Rulin and Xie𝑠, Anze and Xing𝑐𝑚, Eric P and Gonzalez𝑏, Joseph E and Stoica𝑏, Ion and Ma𝑢, Xuezhe and Zhang𝑠, Hao},
+  journal={arXiv preprint arXiv:2310.03294},
+  year={2023}
+}
+```
+
