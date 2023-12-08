@@ -6,8 +6,8 @@ from tqdm import tqdm
 import functools
 
 # import fastckpt before transformers
-from lightseq_ckpt_monkey_patch import replace_hf_ckpt_with_fast_ckpt, clear_all_buffers_at_the_end_of_training
-replace_hf_ckpt_with_fast_ckpt()
+from lightseq_ckpt_monkey_patch import replace_hf_ckpt_with_new_ckpt, clear_all_buffers_at_the_end_of_training
+replace_hf_ckpt_with_new_ckpt()
 
 import numpy as np
 import torch
