@@ -1,0 +1,9 @@
+einops==0.8.0
+flash_attn==2.5.9.post1
+numpy==1.25.0
+pytest==8.2.2
+torch==2.1.0
+tqdm==4.65.2
+transformers==4.34.0
+triton==2.3.1
+xformers==0.0.26.post1
