@@ -1,14 +1,13 @@
-# LightSeq: Sequence Level Parallelism for Distributed Training of Long Context Transformers
-Official repository for LightSeq: Sequence Level Parallelism for Distributed Training of Long Context Transformers. LightSeq achieves up to 2x faster, 2-8x longer sequences vs Megatron-LM on 16 80GB A100s.
+# DistFlashAttention: Distributed Memory-efficient Attention for Long-context LLMs Training
+Official repository for COLM 2024 paper "DISTFLASHATTN: Distributed Memory-efficient Attention for Long-context LLMs Training". DISTFLASHATTN, also named LightSeq, achieves up to 2x faster, 2-8x longer sequences vs Megatron-LM on 16 80GB A100s.
 
 Paper: https://arxiv.org/pdf/2310.03294.pdf
 
-### WARNING: This repo has not been fully tested for end-to-end training. We are actively working on that, with additional feature such as allowing padding in inputs. The current code is only for research preview and reproducing the paper results. We will make public announcement when more support are ready.
-
 ## News
+- [2024/07] Our paper is accepted by COLM 2024!
 - [2023/08] 🔥 Our paper is on! We provide a code preview of LightSeq. Stay tuned for future releases!
 
-## LightSeq Implementation
+## DistFlashAttention Implementation
 * `lightseq_async_attn.py` contains codes for [DistAttn](https://github.com/RulinShao/LightSeq/blob/main/lightseq/lightseq_async_attn.py#L436) adapted from flash attention kernel.
 * `async_communication.py` contains codes for communication-computation overlapped and workload-balanced communication.
 
